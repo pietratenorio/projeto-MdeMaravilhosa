@@ -1,0 +1,286 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+      margin: 2px;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* NAVBAR */
+  
+  .navbar {
+    background-color: #674582;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 104px;
+  }
+  
+  .navbar__logo {
+    max-width: 200px;
+  }
+  
+  .navbar__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .navbar__nav {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+  }
+  
+
+.navbar__nav > li {
+    margin: 0 16px;
+    font-weight: bold;
+  }
+  /* -------------------------------------------------------------------------------- */
+  
+  
+ /* HEADER */
+
+.header {
+
+  min-height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../img/Ruth-de-Souza\ 2.jpeg);
+  background-position: center;
+  
+}
+
+.header_titulo {
+  padding-top: 28rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 4px 3px 9px #000;
+  text-align: center; 
+}
+
+main {
+  padding: 0 15%;
+  color: #63458a;
+}
+
+    
+  
+  /* SECAO Maravilhosa */
+ .container{
+    max-width: 1260px;
+    margin: 0 auto;
+    
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 36px auto;
+  }
+  
+  .minibio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    
+  }
+  .minibio-ruth img {
+    width: 7rem;
+    border-radius: 10px;
+  
+  }
+  
+  .minibio p {
+    width: 80%;
+    text-align: justify;
+  }
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: 36px auto;
+  }
+
+  .historia-ruth p {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+  
+  .foto-ruth-historia3 img {
+    width: 850px;
+        
+  }
+  
+  /* --- citação --- */
+
+  blockquote {
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    text-align: center;
+  }
+    
+/* AUTORA */
+.autora {
+  background-color: #e4b7e5;
+  padding: 0 20%;
+}
+
+.autora .pietra-tenorio-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.autora .pietra-tenorio-container .pietra-tenorio {
+  background-color: #63458a;
+}
+
+.autora .pietra-tenorio-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.pietra-tenorio-container .pietra-tenorio-texto {
+  width: 40%;
+  color: #63458a;
+  font-weight: bold;
+}
+
+/* --- BOTAO --- */
+
+.botao {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.botao a {
+  background-color: #c083b9;
+  border: 2px solid #c083b9;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+
+/* Rodapé */
+
+.rodape {
+  background-color: #323534;
+  color: white;
+}
+
+.rodape__principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.rodape__principal > * {
+  margin: 16px 0;
+}
+
+.rodape__navegacao > li {
+  font-size: 14px;
+  margin: 8px;
+  text-align: center;
+}
+
+.rodape__navegacao a {
+  transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+  color: #c083b9;
+}
+
+.rodape__logo {
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape__cc {
+  width: 100%;
+  background-color: #292a2a;
+  font-size: 14px;
+  opacity: 0.5;
+  text-align: center;
+  padding: 10px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+  .foto-ruth-historia3 img  {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .minibio {
+    flex-direction: column;
+  }
+
+  .minibio img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .minibio p {
+    width: 100%;
+  }
+  .pietra-tenorio-container {
+    padding: 0;
+    margin: 0;
+  }
+  .pietra-tenorio .pietra-tenorio-texto {
+    font-size: 0.8rem;
+  }
+  .rodape__principal {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .navbar__nav {
+    display: none;
+  }
+
+  .pietra-tenorio-container .pietra-tenorio-texto {
+    font-size: 0.6rem;
+  }
+}
